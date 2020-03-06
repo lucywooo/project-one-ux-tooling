@@ -1,3 +1,4 @@
+// Hello world!!
 
 let bar = document.querySelector('.progress')
 
@@ -21,3 +22,4 @@ window.addEventListener('scroll',event => {
 window.addEventListener('mousemove',event=> {
     console.log(event.clientX, event.CLIENT)
 })
+// Goodbye world.
