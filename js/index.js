@@ -1,10 +1,6 @@
 let $bar = document.querySelector('.progress')
 let $progressText = document.querySelector('.progressText')
-let $h1 = document.getElementById('heading')
-let $titleBar = document.querySelector('.titleBar')
-let title = document.querySelector('h1').textContent
-let text = document.querySelector('main').textContent
-let $readingTime = document.getElementById('readingTime')
+
 window.addEventListener('scroll', event => {
 let windowH = window.innerHeight
 let documentH = document.documentElement.scrollHeight
