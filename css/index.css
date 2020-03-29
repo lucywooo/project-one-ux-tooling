@@ -56,10 +56,10 @@ body {
   font-weight: bold;
 }
 
-/* .active {
+.active {
   color: #006230;
   font-weight: bold;
-} */
+}
 
 .sticky {
   position: fixed;

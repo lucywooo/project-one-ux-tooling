@@ -22,6 +22,20 @@
 // }
 // })
 
+// sticky menu
+window.onscroll = function() {myFunction()};
+
+let navBar = document.getElementById("navBar");
+let sticky = navBar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navBar.classList.add("sticky");
+  } else {
+    navBar.classList.remove("sticky");
+  }
+};
+
 // Time count
 function startTimer(duration, display) {
     let timer = duration, minutes, seconds;
@@ -44,31 +58,4 @@ window.onload = function () {
     var fiveMinutes = 60 * 5,
         display = document.querySelector('#time');
     startTimer(fiveMinutes, display);
-};
-
-// sticky menu
-window.onscroll = function() {myFunction()};
-
-let navBar = document.getElementById("navBar");
-let sticky = navBar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navBar.classList.add("sticky");
-  } else {
-    navBar.classList.remove("sticky");
-  }
-};
-
-// scrollspy *DOESNOT WORK*
-window.scroll = function() {
-    let scrollDistance = window.scrollTop();
-    let cur = document.getElementById("section")
-    let activeNav = document.getElementById("navBar")
-
-    if (cur == activeNav){
-        nav-section.attr.add(".active");
-    } else {
-        nav-section.attr.remove(".active");
-    }
 };
